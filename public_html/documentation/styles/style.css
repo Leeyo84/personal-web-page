@@ -3,7 +3,7 @@ body{
 }
 
 
-img {
+img[alt="lillian"] {
 	width: 250px;
 	height: auto;
 	border: black solid 5px;
