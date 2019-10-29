@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Personal Web Page</title>
+	<link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -20,6 +21,7 @@
 
 	<div>
 		<h2>Persona</h2>
+		<img src="images/lillian35.jpg" alt="lillian">
 		<h3>Lillian</h3>
 		<h4>age:35</h4>
 			<p><strong>Profession:</strong> Founder of startup geared at the betterment of their community, looking for a Front-End Web Developer.<br>
