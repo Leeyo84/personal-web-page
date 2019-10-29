@@ -1,4 +1,10 @@
+body{
+	padding: 5em;
+}
+
+
 img {
 	width: 250px;
 	height: auto;
+	border: black solid 5px;
 }
