@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Milestone Two</title>
 	<link rel="stylesheet" href="styles/style.css">
 </head>
 
