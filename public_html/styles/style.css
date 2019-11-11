@@ -1,6 +1,3 @@
-body{
-	padding: 5em;
-}
 
 img[alt="lillian"] {
 	width: 250px;
@@ -9,12 +6,22 @@ img[alt="lillian"] {
 }
 
 body {
+	background-color: olive;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
-.section1, section2 {
-	background-color: transparent;
+
+.card {
+	background: transparent;
+}
+/*.section1, {*/
+/*	background-color: transparent;*/
+/*}*/
+
+.contact-form {
+	float: right;
+	background-color: deeppink;
 }
