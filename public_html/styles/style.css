@@ -2,7 +2,6 @@ body{
 	padding: 5em;
 }
 
-
 img[alt="lillian"] {
 	width: 250px;
 	height: auto;
@@ -10,10 +9,12 @@ img[alt="lillian"] {
 }
 
 body {
-	background: deeppink;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
-.changeColor {
-	background: white;
-	transition: 0.3s all;
+.section1, section2 {
+	background-color: transparent;
 }
