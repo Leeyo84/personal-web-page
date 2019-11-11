@@ -8,3 +8,12 @@ img[alt="lillian"] {
 	height: auto;
 	border: black solid 5px;
 }
+
+body {
+	background: deeppink;
+}
+
+.changeColor {
+	background: white;
+	transition: 0.3s all;
+}
