@@ -21,7 +21,6 @@ body {
 /*	background-color: transparent;*/
 /*}*/
 
-.contact-form {
-	float: right;
+#my-contact-form {
 	background-color: deeppink;
 }

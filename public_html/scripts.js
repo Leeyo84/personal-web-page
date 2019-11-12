@@ -1,4 +1,0 @@
-
-
-
-onscroll fade to transparent
