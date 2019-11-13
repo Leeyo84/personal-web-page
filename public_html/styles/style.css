@@ -7,27 +7,39 @@ img[alt="lillian"] {
 
 body {
 	background-color: olive;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+	font-family: monospace;
 }
 
 .main-heading {
-	background-color: blue;
 	box-sizing: border-box;
 	min-height: 100vh;
 	display: block;
 	overflow: auto;
 }
 
+.creator {
+	padding-top: 175px;
+}
+
+.createor-txt {
+	font-weight: bolder;
+	font-size: 100px;
+}
+
+.navbar-brand {
+	color: black;
+}
+
 .about-me-txt {
+	font-size: 18px;
 	writing-mode: vertical-lr;
 }
 
+.about-me-para {
+	padding-top: 175px;
+}
 
 .about-me {
-	background-color: coral;
 	box-sizing: border-box;
 	min-height: 100vh;
 	display: block;
@@ -35,7 +47,6 @@ body {
 }
 
 .stuff-i-made {
-	background-color: olive;
 	box-sizing: border-box;
 	min-height: 100vh;
 	display: block;
@@ -43,7 +54,6 @@ body {
 }
 
 .pwp-contact-form {
-	background-color: black;
 	box-sizing: border-box;
 	min-height: 100vh;
 	display: block;
@@ -53,9 +63,6 @@ body {
 .card {
 	background: transparent;
 }
-/*.section1, {*/
-/*	background-color: transparent;*/
-/*}*/
 
 #my-contact-form {
 	background-color: deeppink;
