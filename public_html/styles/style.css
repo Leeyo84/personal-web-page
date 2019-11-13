@@ -18,7 +18,7 @@ body {
 }
 
 .creator {
-	padding-top: 175px;
+ padding-top: 170px;
 }
 
 .createor-txt {
@@ -31,7 +31,7 @@ body {
 }
 
 .about-me-txt {
-	font-size: 18px;
+	font-size: 24px;
 	writing-mode: vertical-lr;
 }
 
@@ -40,10 +40,15 @@ body {
 }
 
 .about-me {
+	padding-top: 10em;
 	box-sizing: border-box;
 	min-height: 100vh;
 	display: block;
 	overflow: auto;
+}
+
+.floating-txt {
+	font-size: 50px;
 }
 
 .stuff-i-made {
