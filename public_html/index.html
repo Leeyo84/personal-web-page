@@ -38,24 +38,26 @@
 </head>
 
 <body>
-<section>
+
+
+<section class="main-heading">
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">Leonela Gutierrez</a>
+		<a class="navbar-brand" href="#">Leonela Gutierrez</a>
 	</nav>
-</section>
 
-<section>
-	<div class="section1">
+	<div>
+		<h1 class="text-center">A Creater <br> of Things</h1>
 
-
-		<h1>A Creater of Things</h1>
 			<h4>Fullstack Web Developer</h4>
-
-		<p>About Me</p>
 	</div>
+	<div>
+		<p class="about-me-txt">About Me</p>
+	</div>
+
 </section>
 
-<section>
+<section class="about-me">
 	<div>
 	<h3>Creative</h3>
 
@@ -63,7 +65,7 @@
 
 	<h3>Avid Learner</h3>
 
-	<div>
+	<div class="container text-right">
 		<p>I am a Fullstack Web Developer based out of Albuquerque New Mexico with a passion for learning and creating visually enticing projects.
 			<br> I studied Fine Arts for two years at Central New Mexico Community College and over two years at the University of New Mexico.
 
@@ -79,14 +81,14 @@
 </section>
 
 
-<section>
+<section class="stuff-i-made">
 	<div class="py-5">
 	<h3>Stuff I've made!</h3>
 		<p>My accomplishments are ever growing, please check back regularly to see what I"m up to. </p>
 	<div style="border: none" class="card-deck">
 		<div style="border: none" class="card">
 			<img src="documentation/images/matt-nelson-cTyVIvzQslE-unsplash.jpg" class="card-img-top rounded-circle" alt="place holder for capstone">
-			<div class="card-body">
+			<div class="card-body text-center">
 				<h5 class="card-title">Food Truck Foodie</h5>
 				<p class="card-text">Web application for Food Trucks to promote their business.</p>
 				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -105,23 +107,15 @@
 						<img src="documentation/images/girlwithhat.jpg" class="d-block w-100 rounded-circle" alt="ink drawing of girl w hat">
 					</div>
 				</div>
-				<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
 			</div>
-			<div class="card-body">
+			<div class="card-body text-center">
 				<h5 class="card-title">Drawings and Paintings</h5>
 				<p class="card-text">Some artwork I'm proud of.</p>
 				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 			</div>
 		</div>
 		<div style="border: none" class="card">
-			<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+			<div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<img src="documentation/images/Mural1.jpg" class="d-block w-100 rounded-circle" alt="sketch of man">
@@ -139,16 +133,8 @@
 						<img src="documentation/images/Mural6.jpg" class="d-block w-100 rounded-circle" alt="drawing in progress installed 2of2">
 					</div>
 				</div>
-				<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
 			</div>
-			<div class="card-body">
+			<div class="card-body text-center">
 				<h5 class="card-title">In-Progress Installation</h5>
 				<p class="card-text">This is a piece I did while at the University of New Mexico. I was a live piece that changed daily while on display. </p>
 			</div>
@@ -157,69 +143,47 @@
 	</div>
 </section>
 
-<section>
-<!--	<div class="contact-form container py-5">-->
-<!--		<h3>Hire Me</h3>-->
-<!--		<form id="my-contact-form">-->
-
-<!--			<div class="form-group">-->
-<!--				<label for="exampleFormControlInput1">Name</label>-->
-<!--				<input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Full Name">-->
-<!--			</div>-->
-
-<!--			<div class="form-group">-->
-<!--				<label for="exampleFormControlInput1">E-mail</label>-->
-<!--				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email Here">-->
-<!--			</div>-->
-
-<!--			<div class="form-group">-->
-<!--				<label for="exampleFormControlInput1">Subject</label>-->
-<!--				<input type="" class="form-control" id="exampleFormControlSelect2" placeholder="Subject">-->
-<!--			</div>-->
-
-<!--			<div class="form-group">-->
-<!--				<label for="exampleFormControlTextarea1">Let's talk. :) </label>-->
-<!--				<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>-->
-<!--			</div>-->
+<section class="pwp-contact-form">
+	<div class="container float-right">
 	<form id="my-contact-form" action="../php/" method="post">
 		<div class="form-group">
-			<label for="contactDemoName">Name <span class="text-danger">*</span></label>
+			<label for="name">Name <span class="text-danger">*</span></label>
 			<div class="input-group">
 				<div class="input-group-prepend">
 					<span class="input-group-text"></span>
 					<i class="fa fa-user" aria-hidden="true"></i>
 				</div>
-				<input type="text" class="form-control" id="contactDemoName" name="contactDemoName" placeholder="Name">
+				<input type="text" class="form-control" id="name" name="name" placeholder="Name">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="contactDemoEmail">Email <span class="text-danger">*</span></label>
+			<label for="email">Email <span class="text-danger">*</span></label>
 			<div class="input-group">
 				<div class="input-group-prepend">
 					<span class="input-group-text"></span>
 					<i class="fa fa-envelope" aria-hidden="true"></i>
 				</div>
-				<input type="email" class="form-control" id="contactDemoEmail" name="contactDemoEmail" placeholder="Email">
+				<input type="email" class="form-control" id="email" name="email" placeholder="Email">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="contactDemoSubject">Subject</label>
+			<label for="subject">Subject</label>
 			<div class="input-group">
 				<div class="input-group-prepend">
 					<span class="input-group-text"></span>
 					<i class="fa fa-pencil" aria-hidden="true"></i>
 				</div>
-				<input type="text" class="form-control" id="contactDemoSubject" name="contactDemoSubject" placeholder="Subject">
+				<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="contactDemoMessage">Message <span class="text-danger">*</span></label>
+			<label for="message">Message <span class="text-danger">*</span></label>
 			<div class="input-group">
 				<div class="input-group-prepend">
 					<span class="input-group-text"></span>
 					<i class="fa fa-comment" aria-hidden="true"></i>
 				</div>
-				<textarea class="form-control" rows="5" id="contactDemoMessage" name="contactDemoMessage" placeholder="I <3 CopyPasta :D~ (2000 characters max)"></textarea>
+				<textarea class="form-control" rows="5" id="message" name="message" placeholder="I <3 CopyPasta :D~ (2000 characters max)"></textarea>
 			</div>
 		</div>
 			<!-- reCAPTCHA -->
@@ -227,9 +191,8 @@
 
 			<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
 			<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
-
 		</form>
-
+	</div>
 		<!--empty area for form error/success output-->
 		<div class="row">
 			<div class="col-xs-12">
