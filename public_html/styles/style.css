@@ -6,8 +6,9 @@ img[alt="lillian"] {
 }
 
 body {
-	background-color: olive;
 	font-family: monospace;
+	background-color: steelblue;
+
 }
 
 .main-heading {
@@ -18,7 +19,7 @@ body {
 }
 
 .creator {
- padding-top: 170px;
+	padding-top: 170px;
 }
 
 .createor-txt {
@@ -33,10 +34,12 @@ body {
 a:link {
 	color: black;
 }
+
 a:hover {
 	color: darkmagenta;
 
 }
+
 .about-me-txt {
 	font-size: 24px;
 	writing-mode: vertical-lr;
@@ -50,12 +53,11 @@ a:hover {
 }
 
 .about-me-para {
-	padding-top: 50px;
+	padding-top: 30px;
 }
 
 .about-me {
-	font-size: 14px;
-	padding-top: 10em;
+	font-size: 16px;
 	box-sizing: border-box;
 	min-height: 100vh;
 	display: block;
@@ -85,6 +87,3 @@ a:hover {
 	background: transparent;
 }
 
-#my-contact-form {
-	background-color: deeppink;
-}
