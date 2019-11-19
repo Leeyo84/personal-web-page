@@ -5,16 +5,21 @@
 	<meta name="viewport"
 			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--Animation framework link-->
+
+<!--Animation css link-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 	<!--bootstrap-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <!--My own style sheet-->
 	<link rel="stylesheet" href="styles/style.css">
-	<script src="javascript/scripts.js"></script>
 
-	<!--<script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+	<!--background color change on scroll-->
+	<script src="styles/jquery.scrollie.min.js"></script>
+
+
+
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -26,11 +31,11 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
-
-
+	<!--background color change on scroll-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	<!-- Your JavaScript Form Validator -->
-	<script src="javascript/form-validate.js"></script>
+	<script src="js/form-validate.js"></script>
 
 	<!-- Google reCAPTCHA -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
@@ -39,33 +44,29 @@
 
 </head>
 
-	<body>
+	<body style="background-color: darkmagenta">
 
 	<!--Welcome Section-->
-				<section class=" main-heading cotainer-fluid" >
-					<div>
+				<section class=" main-heading container-fluid main-wrpper ">
 
-						<nav class="navbar navbar-expand-lg">
-							<a class="navbar-brand" href="#">Leonela Gutierrez</a>
-						</nav>
-
-						<div class="creator container-fluid row">
-							<h1 class="col"></h1>
-							<h4 class="col"></h4>
-							<h4 class="col"></h4>
-							<h1 class="col"></h1>
-							<h1 class="animated bounceInLeft slow createor-txt  col-6">A Creator </h1>
-							<h1 class="col"></h1>
-							<h1 class="col"></h1>
-							<h1 class="col"></h1>
+					<div class="slide slide-one" data-background="#3498db">
+						<div class="inside">
+							<div class="creator container-fluid row ">
+								<h4 class="col"></h4>
+								<h4 class="col"></h4>
+								<h1 class="col"></h1>
+								<h1 class="animated bounceInLeft slow creator-txt align-right col-4">A Creator </h1>
+								<h1 class="col"></h1>
+								<h1 class="col"></h1>
+								<h1 class="col"></h1>
+							</div>
 						</div>
 
 						<div class="container-fluid row">
 							<h4 class="col"></h4>
 							<h4 class="col"></h4>
-							<h4 class="col"></h4>
 							<h4 class="col animated bounceIn delay-1s slower text-right">of</h4>
-							<h1 class="col animated bounceInRight delay-1s slow createor-txt ">Things </h1>
+							<h1 class="col animated bounceInRight delay-1s slow creator-txt">Things </h1>
 							<h4 class="col"></h4>
 							<h4 class="col"></h4>
 						</div>
@@ -79,7 +80,7 @@
 
 						<div class="row container-fluid">
 							<p class="col"></p>
-							<a href="lnk to about me section/place holder" class="col about-me-txt animated fadeInDown delay-5s slow">About Me</a>
+							<a href="lnk to about me section/place holder" class="col about-me-txt animated fadeInDown delay-3s slow">About Me</a>
 							<p class="col outer"></p>
 							<p class="col"></p>
 							<p class="col"></p>
@@ -132,17 +133,18 @@
 						</div>
 
 						<div class="row col-8 float-right">
-							<div class="about-me-para">
-								<p >I am a Fullstack Web Developer based out of Albuquerque New Mexico with a passion for learning and creating visually enticing projects.
-									 I studied Fine Arts for two years at Central New Mexico Community College and over two years at the University of New Mexico.
+							<div class="card">
+								<div class="card-body about-me-para">
+									<p class="card-text">I am a Fullstack Web Developer based out of Albuquerque New Mexico with a passion for learning and creating visually enticing projects.
+										I studied Fine Arts for two years at Central New Mexico Community College and over two years at the University of New Mexico.
 
-									I take pride in my work and want to be a positive influence on my community. I strive to be a resource for Hispanic women,
-									 offering my experience and guidance on how to overcome some of the challenges we face. I would love to connect with
-									 like-minded people and organizations in the industry willing to partake in helping the tech industry to become more diverse and inclusive.
+										I take pride in my work and want to be a positive influence on my community. I strive to be a resource for Hispanic women,
+										offering my experience and guidance on how to overcome some of the challenges we face. I would love to connect with
+										like-minded people and organizations in the industry willing to partake in helping the tech industry to become more diverse and inclusive.
 
-									I’m grateful and proud of my rich cultural heritage and want to offer my perspective and insight to encourage outreach and education
-									for Hispanic women interested in tech. I strongly believe that diversity would benefit and push the industry into a new era.
-								</p>
+										I’m grateful and proud of my rich cultural heritage and want to offer my perspective and insight to encourage outreach and education
+										for Hispanic women interested in tech. I strongly believe that diversity would benefit and push the industry into a new era.</p>
+								</div>
 							</div>
 						</div>
 
@@ -150,84 +152,84 @@
 			</section>
 
 	<!--My Stuff Section-->
-			<section class=" container-fluid stuff-i-made" >
-				<div class="py-5">
-<!--Heading and intro to stuff i've made-->
-					<div>
-							<h3 class="animated bounceInLeft slow">Stuff I've made!</h3>
-							<p>My accomplishments are ever growing, please check back regularly to see what I"m up to. </p>
-						</div>
-				<div class="card-deck">
+<!--			<section class=" container-fluid stuff-i-made" >-->
+<!--				<div class="py-5">-->
+<!--&lt;!&ndash;Heading and intro to stuff i've made&ndash;&gt;-->
+<!--					<div>-->
+<!--							<h3 class="animated bounceInLeft slow">Stuff I've made!</h3>-->
+<!--							<p>My accomplishments are ever growing, please check back regularly to see what I"m up to. </p>-->
+<!--						</div>-->
+<!--				<div class="card-deck">-->
 
-					<div style="border: none" class="card">
-						<img src="documentation/images/matt-nelson-cTyVIvzQslE-unsplash.jpg" class="card-img-top rounded-circle" alt="place holder for capstone">
-						<div class="card-body text-center">
-							<h5 class="card-title">Food Truck Foodie</h5>
-							<p class="card-text">Web application for Food Trucks to promote their business.</p>
-						</div>
-					</div>
+<!--					<div style="border: none" class="card">-->
+<!--						<img src="documentation/images/matt-nelson-cTyVIvzQslE-unsplash.jpg" class="card-img-top rounded-circle" alt="place holder for capstone">-->
+<!--						<div class="card-body text-center">-->
+<!--							<h5 class="card-title">Food Truck Foodie</h5>-->
+<!--							<p class="card-text">Web application for Food Trucks to promote their business.</p>-->
+<!--						</div>-->
+<!--					</div>-->
 
-					<div style="border: none" class="card">
-						<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-							<div class="carousel-inner">
+<!--					<div style="border: none" class="card">-->
+<!--						<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">-->
+<!--							<div class="carousel-inner">-->
 
-								<div class="carousel-item active">
-									<img src="documentation/images/Painting1.jpg" class="d-block w-100 rounded-circle" alt="oil painting of girl with winged hair">
-								</div>
+<!--								<div class="carousel-item active">-->
+<!--									<img src="documentation/images/Painting1.jpg" class="d-block w-100 rounded-circle" alt="oil painting of girl with winged hair">-->
+<!--								</div>-->
 
-								<div class="carousel-item">
-									<img src="documentation/images/painting2.jpg" class="d-block w-100 rounded-circle" alt="small oil painting">
-								</div>
+<!--								<div class="carousel-item">-->
+<!--									<img src="documentation/images/painting2.jpg" class="d-block w-100 rounded-circle" alt="small oil painting">-->
+<!--								</div>-->
 
-								<div class="carousel-item">
-									<img src="documentation/images/girlwithhat.jpg" class="d-block w-100 rounded-circle" alt="ink drawing of girl w hat">
-								</div>
+<!--								<div class="carousel-item">-->
+<!--									<img src="documentation/images/girlwithhat.jpg" class="d-block w-100 rounded-circle" alt="ink drawing of girl w hat">-->
+<!--								</div>-->
 
-							</div>
-						</div>
+<!--							</div>-->
+<!--						</div>-->
 
-						<div class="card-body text-center">
-							<h5 class="card-title">Drawings and Paintings</h5>
-							<p class="card-text">Some artwork I'm proud of.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-						</div>
-					</div>
+<!--						<div class="card-body text-center">-->
+<!--							<h5 class="card-title">Drawings and Paintings</h5>-->
+<!--							<p class="card-text">Some artwork I'm proud of.</p>-->
+<!--							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+<!--						</div>-->
+<!--					</div>-->
 
-					<div style="border: none" class="card">
-							<div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
-								<div class="carousel-inner">
+<!--					<div style="border: none" class="card">-->
+<!--							<div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">-->
+<!--								<div class="carousel-inner">-->
 
-										<div class="carousel-item active">
-											<img src="documentation/images/Mural1.jpg" class="d-block w-100 rounded-circle" alt="sketch of man">
-										</div>
+<!--										<div class="carousel-item active">-->
+<!--											<img src="documentation/images/Mural1.jpg" class="d-block w-100 rounded-circle" alt="sketch of man">-->
+<!--										</div>-->
 
-										<div class="carousel-item">
-											<img src="documentation/images/Mural2.jpg" class="d-block w-100 rounded-circle" alt="sketch of bird">
-										</div>
+<!--										<div class="carousel-item">-->
+<!--											<img src="documentation/images/Mural2.jpg" class="d-block w-100 rounded-circle" alt="sketch of bird">-->
+<!--										</div>-->
 
-										<div class="carousel-item">
-											<img src="documentation/images/Mural3.jpg" class="d-block w-100 rounded-circle" alt="sketch of bird and man">
-										</div>
+<!--										<div class="carousel-item">-->
+<!--											<img src="documentation/images/Mural3.jpg" class="d-block w-100 rounded-circle" alt="sketch of bird and man">-->
+<!--										</div>-->
 
-										<div class="carousel-item">
-											<img src="documentation/images/Mural5.jpg" class="d-block w-100 rounded-circle" alt="drawing in progress installed 1of2">
-										</div>
+<!--										<div class="carousel-item">-->
+<!--											<img src="documentation/images/Mural5.jpg" class="d-block w-100 rounded-circle" alt="drawing in progress installed 1of2">-->
+<!--										</div>-->
 
-										<div class="carousel-item">
-											<img src="documentation/images/Mural6.jpg" class="d-block w-100 rounded-circle" alt="drawing in progress installed 2of2">
-										</div>
+<!--										<div class="carousel-item">-->
+<!--											<img src="documentation/images/Mural6.jpg" class="d-block w-100 rounded-circle" alt="drawing in progress installed 2of2">-->
+<!--										</div>-->
 
-								</div>
-							</div>
+<!--								</div>-->
+<!--							</div>-->
 
-								<div class="card-body text-center">
-									<h5 class="card-title">In-Progress Installation</h5>
-									<p class="card-text">This is a piece I did while at the University of New Mexico. I was a live piece that changed daily while on display. </p>
-								</div>
-						</div>
-				</div>
-			</div>
-			</section>
+<!--								<div class="card-body text-center">-->
+<!--									<h5 class="card-title">In-Progress Installation</h5>-->
+<!--									<p class="card-text">This is a piece I did while at the University of New Mexico. I was a live piece that changed daily while on display. </p>-->
+<!--								</div>-->
+<!--						</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			</section>-->
 
 	<!--Contact Form Section-->
 			<section class=" pwp-contact-form" >
@@ -295,6 +297,8 @@
 					</div>
 
 			</section>
+
+	<script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 	</body>
 </html>

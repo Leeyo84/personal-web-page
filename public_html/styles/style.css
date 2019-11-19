@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 img[alt="lillian"] {
 	width: 250px;
@@ -5,14 +6,37 @@ img[alt="lillian"] {
 	border: black solid 5px;
 }
 
-body {
-	font-family: monospace;
-	background-color: steelblue;
-
+* {
+	box-sizing: border-box;
 }
 
+body {
+	font-family: monospace;
+
+	background: #0073AA;
+	transition: background 2s ease;
+
+	/*height: 3200px; !* Used to enable scrolling *!*/
+	/*background: linear-gradient(55deg, white 0%, olivedrab 51%, #0073AA 85%);*/
+}
+
+/*color changing on scroll*/
+.slide{
+	padding-top: 20em;
+}
+
+.slide .inside {
+	display: table;
+	height: 100%;
+	width: 100%;
+	padding: 0 3em;
+}
+
+/*end of bgColorChange */
+
 .main-heading {
-	box-sizing: border-box;
+	color: black;
+	/*box-sizing: border-box;*/
 	min-height: 100vh;
 	display: block;
 	overflow: auto;
@@ -22,16 +46,24 @@ body {
 	padding-top: 170px;
 }
 
-.createor-txt {
-	font-weight: bolder;
+.creator-txt {
+	color: #0073AA;
+	text-shadow: -1px 1px 0 white,
+	1px 1px 0 white,
+	1px -1px 0 white;
+	/*-1px -1px 0 white;*/
+	/*font-weight: bolder;*/
 	font-size: 75px;
 }
 
-.navbar-brand {
+.nav-name {
 	color: black;
+	font-size: 24px;
+	padding: 1em;
 }
 
 a:link {
+	text-decoration: none;
 	color: black;
 }
 
@@ -53,12 +85,13 @@ a:hover {
 }
 
 .about-me-para {
-	padding-top: 30px;
+	padding-top: 20px;
+	text-align: justify;
 }
 
 .about-me {
 	font-size: 16px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	min-height: 100vh;
 	display: block;
 	overflow: auto;
@@ -70,20 +103,21 @@ a:hover {
 
 .stuff-i-made {
 
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	min-height: 100vh;
 	display: block;
 	overflow: auto;
 }
 
 .pwp-contact-form {
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	min-height: 100vh;
 	display: block;
 	overflow: auto;
 }
 
 .card {
+	border: none;
 	background: transparent;
 }
 
