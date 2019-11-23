@@ -92,16 +92,16 @@ a:hover {
 	padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create three equal columns that sits next to each other */
 .gallery-column {
-	-ms-flex: 25%; /* IE10 */
-	flex: 25%;
-	max-width: 25%;
-	padding: 0 4px;
+	-ms-flex: 33%; /* IE10 */
+	flex: 33%;
+	max-width: 33%;
+	padding: 6px;
 }
 
 .gallery-column img {
-	margin-top: 8px;
+	margin-top: 1em;
 	vertical-align: middle;
 	width: 100%;
 }
