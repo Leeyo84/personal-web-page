@@ -29,11 +29,10 @@ body {
 }
 
 .creator-txt {
-	color: #0073AA;
-	text-shadow: -1px 1px 0 white,
-	1px 1px 0 white,
-	1px -1px 0 white;
-	/*-1px -1px 0 white;*/
+	color: white;
+	text-shadow: -1px 1px 0 darkslategreygti ,
+	1px 1px 0 darkslategrey;
+
 	font-weight: bolder;
 	font-size: 15vmin;
 }
