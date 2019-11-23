@@ -45,7 +45,7 @@
                     "email": "christian@lueck.tv"
                 }
             ],
-            "description": "A simple and modern approach to stream filtering in PHP",
+            "description": "A  simple and modern approach to stream filtering in PHP",
             "homepage": "https://github.com/clue/php-stream-filter",
             "keywords": [
                 "bucket brigade",

@@ -24,16 +24,16 @@ body {
 
 /*color changing on scroll*/
 
-.slide {
+/*.slide {*/
 
-	.inside {
-		display: table;
-		height: 100%;
-		width: 100%;
-		padding: 0 3em;
-	}
+/*	.inside {*/
+/*		display: table;*/
+/*		height: 100%;*/
+/*		width: 100%;*/
+/*		padding: 0 3em;*/
+/*	}*/
 
-}
+/*}*/
 
 
 /*.slide{*/
@@ -62,13 +62,13 @@ body {
 }
 
 .creator-txt {
-	color: black;
+	color: #0073AA;
 	text-shadow: -1px 1px 0 white,
 	1px 1px 0 white,
 	1px -1px 0 white;
 	/*-1px -1px 0 white;*/
-	/*font-weight: bolder;*/
-	font-size: 75px;
+	font-weight: bolder;
+	font-size: 15vmin;
 }
 
 .nav-name {
@@ -136,3 +136,10 @@ a:hover {
 	background: transparent;
 }
 
+@media only screen and (max-width: 320px) {
+
+	body {
+		font-size: 2em;
+	}
+
+}
