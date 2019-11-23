@@ -12,6 +12,9 @@
 	<!--bootstrap-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+<!--Fancybox links for gallergy-->
+	<link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+
 <!--My own style sheet-->
 	<link rel="stylesheet" href="styles/style.css">
 	<script src="styles/scripts.js"></script>
@@ -52,10 +55,12 @@
 </head>
 
 	<body>
-<!--nav bar-->
+
+	<!--Hidden Nav-->
+	<section>
 
 <!-- The overlay -->
-<div id="myNav" class="overlay">
+	<div id="myNav" class="overlay">
 
 	<!-- Button to close the overlay navigation -->
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -63,7 +68,7 @@
 	<!-- Overlay content -->
 	<div class="overlay-content">
 		<a href="#">Home</a>
-		<a href="#">About Me</a>
+			<a href="about-me">About Me</a>
 		<a href="#">Stuff I've made!</a>
 		<a href="#">Let's talk!</a>
 	</div>
@@ -73,10 +78,11 @@
 <!-- Use any element to open/show the overlay navigation menu -->
 <span onclick="openNav()" ><h3 class="nav-button">Leo</h3></span>
 
+	</section>
 
 
 	<!--Welcome Section-->
-				<section class=" main-heading container-fluid">
+				<section class=" main-heading container-fluid" id="home">
 
 					<div class="main-wrapper">
 
@@ -130,7 +136,7 @@
 			</section>
 
 		<!--About Me Section-->
-				<section>
+				<section id="about-me">
 
 					<div class="container about-me row" >
 
@@ -181,7 +187,7 @@
 			</section>
 
 	<!--My Stuff Section-->
-<!--			<section class=" container-fluid stuff-i-made" >-->
+<!--			<section class=" container-fluid stuff-i-made" id="stuff-i-made" >-->
 <!--				<div class="py-5">-->
 <!--&lt;!&ndash;Heading and intro to stuff i've made&ndash;&gt;-->
 <!--					<div>-->
@@ -261,7 +267,7 @@
 <!--			</section>-->
 
 	<!--Contact Form Section-->
-			<section class=" pwp-contact-form" >
+			<section class=" pwp-contact-form" id="contact-form-link" >
 				<div class="container float-right">
 
 					<form id="my-contact-form" action="../php/" method="post">
@@ -328,6 +334,10 @@
 			</section>
 
 	<script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<!-- JS fancy box 3 -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="jquery.fancybox.min.js"></script>
 
 	</body>
 </html>
