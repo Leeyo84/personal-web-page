@@ -14,6 +14,7 @@
 
 <!--My own style sheet-->
 	<link rel="stylesheet" href="styles/style.css">
+	<script src="styles/scripts.js"></script>
 
 	<!--background color change on scroll-->
 	<script src="styles/jquery.scrollie.min.js"></script>
@@ -51,6 +52,28 @@
 </head>
 
 	<body>
+<!--nav bar-->
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+	<!-- Button to close the overlay navigation -->
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+	<!-- Overlay content -->
+	<div class="overlay-content">
+		<a href="#">Home</a>
+		<a href="#">About Me</a>
+		<a href="#">Stuff I've made!</a>
+		<a href="#">Let's talk!</a>
+	</div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span onclick="openNav()" class="nav-button"><img src="documentation/images/girlwithhat.jpg" alt="button img"></span>
+
+
 
 	<!--Welcome Section-->
 				<section class=" main-heading container-fluid">
@@ -62,7 +85,7 @@
 								<h4 class="col"></h4>
 								<h4 class="col"></h4>
 								<h1 class="col"></h1>
-								<h1 class="animated bounceInLeft slow creator-txt align-right col-4">A Creator </h1>
+								<h1 class="animated bounceInLeft slow creator-txt align-right col-5">A Creator </h1>
 								<h1 class="col"></h1>
 								<h1 class="col"></h1>
 								<h1 class="col"></h1>
@@ -109,9 +132,9 @@
 		<!--About Me Section-->
 				<section>
 
-					<div class="container-fluid about-me" >
+					<div class="container about-me row" >
 
-						<div>
+						<div class="col">
 
 							<div class="row">
 								<h3 class="col"></h3>
@@ -143,7 +166,7 @@
 							</div>
 						</div>
 
-						<div class="about-me-para float-right">
+						<div class="about-me-para float-right col-8">
 							<p class="align-right">I am a Fullstack Web Developer based out of Albuquerque New Mexico with a passion for learning and creating visually enticing projects.
 										I studied Fine Arts for two years at Central New Mexico Community College and over two years at the University of New Mexico.
 										I take pride in my work and want to be a positive influence on my community. I strive to be a resource for Hispanic women,
