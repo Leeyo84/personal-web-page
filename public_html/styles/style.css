@@ -12,6 +12,7 @@ img[alt="lillian"] {
 }
 
 body {
+	margin-top: 12em;
 	font-family: monospace;
 	background: #0073AA;
 	transition: background 1s ease;
@@ -23,14 +24,28 @@ body {
 	height: 100px;
 }
 
-.main-logo {
-	width: 500px;
+
+.creator{
+	align-content: center;
+
 }
+
+.main-logo {
+	width: 100%;
+}
+
+.navbar {
+	flex-wrap: nowrap;
+}
+
 /* Create three equal columns that sits next to each other */
 .main-heading {
-	-ms-flex: 33%;
-	flex: 33%;
-	max-width: 33%;
+	align-content: center;
+	padding: 0;
+	-ms-flex: 40%;
+	flex: 40%;
+	max-width: 40%;
+	overflow-x: hidden;
 }
 
 
@@ -60,14 +75,14 @@ body {
 }
 
 
-.creator-txt {
-	color: white;
-	text-shadow: -1px 1px 0 darkslategrey,
-	1px 1px 0 darkslategrey;
+/*.creator-txt {*/
+/*	color: white;*/
+/*	text-shadow: -1px 1px 0 darkslategrey,*/
+/*	1px 1px 0 darkslategrey;*/
 
-	font-weight: bolder;
-	font-size: 15vmin;
-}
+/*	font-weight: bolder;*/
+/*	font-size: 15vmin;*/
+/*}*/
 
 /*link color and hover color change*/
 a:link {
@@ -93,6 +108,7 @@ a:hover {
 }
 
 .about-me-para {
+	color: white;
 	padding-top: 20px;
 	text-align: justify;
 }
@@ -192,7 +208,7 @@ a:hover {
 
 .nav-button{
 	padding-top: 1em;
-	padding-left: 1em;
+	/*padding-left: 1em;*/
 	cursor: pointer;
 }
 
