@@ -20,7 +20,7 @@ body {
 }
 
 .page-sections{
-	padding-top: 10em;
+	padding-top: 8em;
 }
 
 /*logo sizing*/
@@ -215,6 +215,11 @@ label {
 .g-recaptcha {
 	margin: 1em;
 	/*border: 5px solid black;*/
+}
+
+.message {
+	margin-top: 6rem;
+
 }
 
 
