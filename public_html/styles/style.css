@@ -12,6 +12,7 @@ img[alt="lillian"] {
 }
 
 body {
+	overflow-x: hidden;
 	margin-top: 12em;
 	font-family: monospace;
 	background: #0073AA;
@@ -75,14 +76,6 @@ body {
 }
 
 
-/*.creator-txt {*/
-/*	color: white;*/
-/*	text-shadow: -1px 1px 0 darkslategrey,*/
-/*	1px 1px 0 darkslategrey;*/
-
-/*	font-weight: bolder;*/
-/*	font-size: 15vmin;*/
-/*}*/
 
 /*link color and hover color change*/
 a:link {
@@ -91,11 +84,16 @@ a:link {
 }
 
 a:hover {
-	color: darkmagenta;
+	color: #D51D94;
+}
+
+a:visited {
+	color: #D51D94;
 }
 
 /*about me section headings and para*/
 .about-me-txt {
+	color: black;
 	font-size: 24px;
 	writing-mode: vertical-lr;
 }
@@ -179,31 +177,53 @@ a:hover {
 
 /*contact form*/
 .pwp-contact-form {
-	/*box-sizing: border-box;*/
+	overflow: hidden;
 	min-height: 100vh;
 	display: block;
 	overflow: auto;
 }
 
-.card {
+label {
+	padding: 0;
+	font-size: x-large;
+}
+
+.btn-success, .btn-warning {
+	padding: 5px;
+	margin: 5px;
+	font-size: x-large;
+	font-family: monospace;
+	color: #D51D94;
+	background-color: black;
 	border: none;
-	background: transparent;
+}
+
+.form-control{
+		border: 5px solid black;
+	margin-bottom: 1em;
+}
+
+.form-group {
+	margin-bottom: 0;
+}
+
+.g-recaptcha {
+	margin: 1em;
+	/*border: 5px solid black;*/
 }
 
 
 
 /* makes page responsive*/
 @media only screen and (max-width: 320px) {
-
 	body {
 		font-size: 2em;
 	}
-
 }
 
-
+/* nav bar w/ overlay*/
 .nav-button:hover {
-	color: darkmagenta;
+	color: #D51D94;
 }
 
 .nav-button{
@@ -248,7 +268,7 @@ a:hover {
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-	color: darkmagenta;
+	color: #D51D94;
 }
 
 /* Position the close button (top right corner) */

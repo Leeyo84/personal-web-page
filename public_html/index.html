@@ -61,26 +61,26 @@
 		<nav class="navbar fixed-top">
 	
 <!-- The overlay -->
-	<div id="myNav" class="overlay">
+	<div class="overlay" id="myNav" data-toggle="collapse" data-target="myNav">
 
 	<!-- Button to close the overlay navigation -->
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
 	<!-- Overlay content -->
-	<div class="overlay-content">
-		<a href="#">Home</a>
-			<a href="about-me">About Me</a>
-		<a href="#">Stuff I've made!</a>
-		<a href="#">Let's talk!</a>
+	<div class="overlay-content" >
+		<a href="#home">Home</a>
+		<a href="#about">About Me</a>
+		<a href="#stuff">Stuff I've made!</a>
+		<a href="#form">Let's talk!</a>
 	</div>
 
 </div>
 
 <!-- Use any element to open/show the overlay navigation menu -->
 
-<span onclick="openNav()" ><h3 class="nav-button"><img class="logo" src="documentation/images/logo3.png" alt=""></h3></span>
-			<a href=""><img class="logo " src="documentation/images/githublogo.png" alt=""></a>
-			<a href=""><img class="logo " src="documentation/images/linkedin.png" alt=""></a>
+<span onclick="openNav()" ><h3 class="nav-button"><img class="logo" src="documentation/images/leoLogoWBP.png" alt=""></h3></span>
+			<a href="https://github.com/Leeyo84"><img class="logo " src="documentation/images/githublogo.png" alt=""></a>
+			<a href="https://www.linkedin.com/in/leonelagutierrez/"><img class="logo " src="documentation/images/linkedin.png" alt=""></a>
 
 		</nav>
 	</section>
@@ -103,12 +103,14 @@
 						</div>
 
 						<div class="row container-fluid">
-							<p class="col"></p>
-							<a href="lnk to about me section/place holder" class="col about-me-txt animated fadeInDown delay-3s slow">About Me</a>
-							<p class="col outer"></p>
-							<p class="col"></p>
-							<p class="col"></p>
-							<p class="col"></p>
+							<p class="col-1"></p>
+							<p class="col-1"></p>
+							<a href="#about" class="col about-me-txt animated fadeInDown delay-3s slow">About Me</a>
+							<p class="col-8 "></p>
+<!--							<p class="col"></p>-->
+<!--							<p class="col"></p>-->
+<!--							<p class="col"></p>-->
+<!--							<p class="col"></p>-->
 						</div>
 
 						<div class="row container-fluid">
@@ -124,9 +126,9 @@
 			</section>
 
 		<!--About Me Section-->
-				<section class="container-fluid">
+				<section class="container-fluid" id="about">
 
-					<div class="about-me" >
+					<div class="about-me " >
 
 						<div class="col">
 
@@ -177,12 +179,13 @@
 			</section>
 
 	<!--My Stuff Section-->
-<section>
+<section class="py-5 row" id="stuff">
 
-	<h2 class="p-3">Stuff I've made.</h2>
+	<h2 class="col-2"></h2>
+	<h2 class="col p-3">Stuff I've made.</h2>
 	<div class="gallery-row ml-1">
 
-		<div class="gallery-column">
+		<div class="gallery-column ml-2">
 			<img src="documentation/images/beardedman.jpg">
 			<img src="documentation/images/largeabstractdrawing.jpg" >
 			<img src="documentation/images/wingedhair.jpg">
@@ -207,58 +210,38 @@
 </section>
 
 	<!--Contact Form Section-->
-			<section class=" pwp-contact-form row" id="contact-form-link" >
+			<section class=" pwp-contact-form container row" id="form" >
 				<div class="container col p-5">
 
 					<form id="my-contact-form" action="../php/" method="post">
+
 						<div class="form-group">
 							<label for="name">Name <span class="text-danger">*</span></label>
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<span class="input-group-text"></span>
-									<i class="fa fa-user" aria-hidden="true"></i>
 								</div>
 								<input type="text" class="form-control" id="name" name="name" placeholder="Name">
-							</div>
-						</div>
+
 
 						<div class="form-group">
 							<label for="email">Email <span class="text-danger">*</span></label>
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<span class="input-group-text"></span>
-									<i class="fa fa-envelope" aria-hidden="true"></i>
 								</div>
 								<input type="email" class="form-control" id="email" name="email" placeholder="Email">
-							</div>
-						</div>
+
 
 						<div class="form-group">
 							<label for="subject">Subject</label>
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<span class="input-group-text"></span>
-									<i class="fa fa-pencil" aria-hidden="true"></i>
 								</div>
 								<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
-							</div>
-						</div>
 
 						<div class="form-group">
 							<label for="message">Message <span class="text-danger">*</span></label>
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<span class="input-group-text"></span>
-									<i class="fa fa-comment" aria-hidden="true"></i>
 								</div>
-								<textarea class="form-control" rows="5" id="message" name="message" placeholder="I <3 CopyPasta :D~ (2000 characters max)"></textarea>
-							</div>
-						</div>
-							<!-- reCAPTCHA -->
-							<div class="g-recaptcha" data-sitekey="6LemKsIUAAAAAIxTtfgBNSAxRuhvhsUojL9D5yfL"></div>
+								<textarea class="form-control" rows="5" id="message" name="message" placeholder="Let's Talk! (2000 characters max)"></textarea>
 
-							<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
-							<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
+							<!-- reCAPTCHA -->
+							<div class="g-recaptcha overflow-hidden" data-sitekey="6LemKsIUAAAAAIxTtfgBNSAxRuhvhsUojL9D5yfL"></div>
+
+							<button class="btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+							<button class="btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
 
 					</form>
 
