@@ -19,6 +19,10 @@ body {
 	transition: background 1s ease;
 }
 
+.page-sections{
+	padding-top: 10em;
+}
+
 /*logo sizing*/
 .logo {
 	width: 100px;
@@ -58,6 +62,7 @@ body {
 		max-width: 50%;
 	}
 }
+
 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -113,8 +118,7 @@ a:visited {
 
 .about-me {
 	font-size: 16px;
-	/*box-sizing: border-box;*/
-	min-height: 100vh;
+	min-height: 75vh;
 	display: block;
 	overflow: auto;
 }
@@ -181,6 +185,7 @@ a:visited {
 	min-height: 100vh;
 	display: block;
 	overflow: auto;
+	margin-top: 5em;
 }
 
 label {
