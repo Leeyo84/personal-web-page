@@ -20,3 +20,6 @@ Overall, this is a very good project.  No picture or styling keeps this from bei
 Overall, the visual look of these wireframes establishes a coherent, eye-catching visual look for the site.  This look is ambitious and may be difficult to achieve, but if you can pull it off, this will be a great PWP.  Nice work.  
 
 **This milestone grades out at a Tier IV**
+
+## Milestone 4 feedback
+Looks good. Design follows your intended content strategy. Consistent git commits/pushes. There are no major issues with rendering on mobile/browser. This passes at a Tier IV.
