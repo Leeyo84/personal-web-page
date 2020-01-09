@@ -8,6 +8,16 @@ function closeNav() {
 	document.getElementById("myNav").style.width = "0%";
 }
 
+
+// Close after clicking on a li
+
+// $('#nav-overlay li').on('click', function(){
+// 	$("#nav-overlay").hide();
+// 	$("#button-toggle").removeClass("active");
+// });
+
+
+
 //changes background color on scroll
 function changeColor(){
 	if(window.pageYOffset < 1000){
